@@ -1,28 +1,7 @@
-# AI Crew for Trip Planning
-## Introduction
-This project is an example using the CrewAI framework to automate the process of planning a trip if you are in doubt between different options. CrewAI orchestrates autonomous AI agents, enabling them to collaborate and execute complex tasks efficiently.
+AI Crew for Trip Planning is an intelligent trip-planning assistant powered by the CrewAI framework. It uses multiple AI agents working together to help users decide between different destinations and create a customized itinerary based on their preferences. By leveraging GPT-4, the system automates the research and planning process, making trip organization effortless and efficient.
 
-- [CrewAI Framework](#crewai-framework)
-- [Running the script](#running-the-script)
-- [Details & Explanation](#details--explanation)
+AI Crew for Trip Planning Overview This project uses the CrewAI framework to automate trip planning when choosing between multiple destinations. AI agents collaborate to create a full itinerary based on your preferences.
 
-## CrewAI Framework
-CrewAI is designed to facilitate the collaboration of role-playing AI agents. In this example, these agents work together to choose between different of cities and put together a full itinerary for the trip based on your preferences.
+Getting Started Setup Environment: Copy .env.example and configure API keys for Browserless, Serper, and OpenAI. Install Dependencies: Run poetry install --no-root. Run Script: Execute poetry run python main.py and input your idea. ⚠ Note: The script uses GPT-4 by default, which may incur costs.
 
-## Running the Script
-It uses GPT-4 by default so you should have access to that to run it.
-
-***Disclaimer:** This will use gpt-4 unless you changed it 
-not to, and by doing so it will cost you money.*
-
-- **Configure Environment**: Copy ``.env.example` and set up the environment variables for [Browseless](https://www.browserless.io/), [Serper](https://serper.dev/) and [OpenAI](https://platform.openai.com/api-keys)
-- **Install Dependencies**: Run `poetry install --no-root`.
-- **Execute the Script**: Run `poetry run python main.py` and input your idea.
-
-## Details & Explanation
-- **Running the Script**: Execute `python main.py`` and input your idea when prompted. The script will leverage the CrewAI framework to process the idea and generate a landing page.
-- **Key Components**:
-  - `./main.py`: Main script file.
-  - `./trip_tasks.py`: Main file with the tasks prompts.
-  - `./trip_agents.py`: Main file with the agents creation.
-  - `./tools`: Contains tool classes used by the agents.
+Key Components main.py – Main script trip_tasks.py – Task prompts trip_agents.py – Agent configurations tools/ – Utility tools for agents
